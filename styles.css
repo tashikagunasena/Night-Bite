@@ -354,7 +354,6 @@ textarea {
 .nav-link:hover {
   color: var(--color-secondary);
 }
-
 .nav-link:hover::after {
   width: 100%;
 }
@@ -416,7 +415,6 @@ textarea {
 .mobile-menu-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
 .mobile-menu-btn.active {
   color: var(--color-secondary);
 }
@@ -866,11 +864,9 @@ textarea {
 .cart-items::-webkit-scrollbar {
   width: 8px;
 }
-
 .cart-items::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.05);
 }
-
 .cart-items::-webkit-scrollbar-thumb {
   background: var(--color-secondary);
   border-radius: 4px;
@@ -1018,7 +1014,6 @@ textarea {
   display: flex;
   gap: 10px;
 }
-
 .cart-actions .btn {
   flex: 1;
   padding: 14px 20px;
@@ -1107,12 +1102,10 @@ textarea {
 .contact-phone {
   margin-top: 30px;
 }
-
 .contact-phone p {
   color: var(--color-text-muted);
   margin-bottom: 10px;
 }
-
 .contact-phone h3 {
   color: var(--color-primary);
   font-size: 2rem;
@@ -1585,7 +1578,6 @@ textarea {
   .hero-title {
     font-size: 2.5rem;
   }
-
   .hero-description {
     font-size: 1rem;
   }
@@ -1605,40 +1597,77 @@ textarea {
   }
 
   .spotlight-section {
-    padding: 60px 5%;
+    padding: 60px 4%;
   }
 
   .spotlight-card {
-    padding: 25px;
+    padding: 30px 20px;
     gap: 25px;
+    flex-direction: column;
+    text-align: center;
     border-radius: var(--radius-md);
   }
 
   .spotlight-badge {
-    top: -18px;
-    right: 15px;
-    padding: 10px 22px;
-    font-size: 0.9rem;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    box-shadow: 0 8px 20px rgba(255, 42, 109, 0.4);
+  }
+
+  .spotlight-img {
+    transform: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   }
 
   .spotlight-img img {
-    height: 220px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .spotlight-card:hover .spotlight-img {
+    transform: none;
+  }
+
+  .spotlight-info {
+    text-align: center;
+    min-width: 100%;
   }
 
   .spotlight-info h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
   }
 
   .spotlight-info p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
   }
 
   .price-tag {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
   }
 
   .old-price {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  #spotlight-add-btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   .filter-section {
@@ -1683,7 +1712,6 @@ textarea {
   .reservation-section {
     padding: 60px 5%;
   }
-
   .reservation-info h2 {
     font-size: 2rem;
   }
@@ -1729,7 +1757,6 @@ textarea {
   .cart-header {
     padding: 20px;
   }
-
   .cart-header h2 {
     font-size: 1.4rem;
   }
@@ -1746,7 +1773,6 @@ textarea {
   .footer {
     padding: 50px 5% 30px;
   }
-
   .footer-content {
     gap: 30px;
   }
@@ -1754,7 +1780,6 @@ textarea {
   .modal {
     padding: 30px 20px;
   }
-
   .modal h2 {
     font-size: 1.6rem;
   }
@@ -1774,39 +1799,42 @@ textarea {
   .hero-title {
     font-size: 2rem;
   }
-
   .hero-description {
     font-size: 0.9rem;
   }
-
   .section-title {
     font-size: 1.8rem;
   }
 
+  .spotlight-section {
+    padding: 40px 4%;
+  }
+
   .spotlight-card {
     padding: 20px 15px;
+    border-radius: 20px;
   }
 
   .spotlight-badge {
-    position: static;
-    display: inline-block;
+    font-size: 0.75rem;
+    padding: 6px 16px;
     margin-bottom: 15px;
-    font-size: 0.8rem;
-    padding: 8px 18px;
   }
 
-  .spotlight-info {
-    text-align: center;
+  .spotlight-img img {
+    aspect-ratio: 3 / 2;
   }
 
   .spotlight-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .spotlight-info p {
+    font-size: 0.9rem;
   }
 
   .logo {
     font-size: 1.5rem;
   }
-
   .cart-btn {
     padding: 8px 14px;
   }
@@ -1824,7 +1852,6 @@ textarea {
   .newsletter-form {
     flex-direction: column;
   }
-
   .newsletter-form .btn {
     width: 100%;
   }
@@ -1834,7 +1861,6 @@ textarea {
   .btn:hover {
     transform: none;
   }
-
   .btn:active {
     transform: scale(0.95);
   }
@@ -1842,7 +1868,6 @@ textarea {
   .menu-item:hover {
     transform: none;
   }
-
   .menu-item:active {
     transform: scale(0.98);
   }
@@ -1850,15 +1875,13 @@ textarea {
   .spotlight-card:hover {
     transform: none;
   }
-
-  .spotlight-card:active {
+  .spotlight-card:active .spotlight-img {
     transform: scale(0.98);
   }
 
   .feature-item:hover {
     transform: none;
   }
-
   .contact-item:hover {
     transform: none;
   }
